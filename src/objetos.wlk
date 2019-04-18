@@ -11,7 +11,7 @@ object vidrio { method brilla() { return true } }
 object cobre {method brilla(){return true}}
 object madera {method brilla(){return false}}
 object cuero {method brilla(){return false}}
-// agregar: cobre, madera, cuero
+
 
 /* objetos */
 object remera {
@@ -67,7 +67,11 @@ object banquito {
 
 object cajita{
 	var color
+	var objetoDentro
 	method color(){return color}
 	method color(colorNuevo){color=colorNuevo}
+	method material(){return cobre}
+	method objetoDentro(objtoDentro){objetoDentro=objtoDentro}
+	method peso(){return 400 + objetoDentro.peso()}
 	
 }
